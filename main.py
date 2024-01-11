@@ -195,24 +195,49 @@
 # strs2 = ["dog", "racecar", "car"]
 # print(longestCommonPrefix(strs2))  # Output: ""
 
-def isValid(s):
-    stack = []
-    mapping = {')': '(', '}': '{', ']': '['}
+# def isValid(s):
+#     stack = []
+#     mapping = {')': '(', '}': '{', ']': '['}
 
-    for char in s:
-        if char in mapping:
-            top_element = stack.pop() if stack else '#'
-            if mapping[char] != top_element:
-                return False
-        else:
-            stack.append(char)
+#     for char in s:
+#         if char in mapping:
+#             top_element = stack.pop() if stack else '#'
+#             if mapping[char] != top_element:
+#                 return False
+#         else:
+#             stack.append(char)
 
-    return not stack
+#     return not stack
 
-# Example usage:
-print(isValid("()"))        # Output: True
-print(isValid("()[]{}"))    # Output: True
-print(isValid("(]"))         # Output: False
-print(isValid("([)]"))       # Output: False
-print(isValid("{[]}"))       # Output: True
+# # Example usage:
+# print(isValid("()"))        # Output: True
+# print(isValid("()[]{}"))    # Output: True
+# print(isValid("(]"))         # Output: False
+# print(isValid("([)]"))       # Output: False
+# print(isValid("{[]}"))       # Output: True
 
+
+
+# fruits = {"apple", "banana", "cherry"}
+# more_fruits = ["orange", "mango", "grapes"]
+# fruits.update(more_fruits)
+
+# print(fruits)
+
+
+
+# fruits = {"apple", "banana", "cherry"}
+# fruits.append("append")
+
+
+# fruits = {"apple", "banana", "cherry"}
+
+
+x = 41
+
+if x > 10:
+  print("Above ten,")
+  if x > 20:
+    print("and also above 20!")
+  else:
+    print("but not above 20.")
